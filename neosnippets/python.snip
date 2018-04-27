@@ -65,17 +65,6 @@ options     head
 	with open(${1:#:file}, '${2:r}') as ${3:f}:
 		${0:pass}
 
-snippet     for
-abbr        for ... in ...: ...
-options     head
-	for ${1:#:value} in ${2:#:list}:
-		${0:pass}
-
-snippet     if
-abbr        if ...: ...
-options     head
-	if ${1:#:condition}:
-		${0:pass}
 
 snippet     ifmain
 abbr        if __name__ == '__main__': ...

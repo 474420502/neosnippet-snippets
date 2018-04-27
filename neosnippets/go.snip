@@ -125,3 +125,12 @@ options     head
     }
   }
 
+snippet     funcrecover
+abbr        defer func(){ if err := recover(); err != nil { ... }  }()
+options     head
+  defer func(){ 
+    if err := recover(); err != nil { 
+        log.Println(err)
+        debug.PrintStack()
+    }  
+  }()
